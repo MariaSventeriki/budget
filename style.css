@@ -1,0 +1,144 @@
+body {
+    box-sizing: border-box;
+font-family: 'Tahoma';
+color: #1695b4;
+position: relative;
+padding-bottom: 5%;
+background: rgb(0, 10, 12);
+background: linear-gradient(306deg, rgb(0, 10, 12) 0%, rgb(137, 180, 177) 35%, rgb(0, 10, 12) 100%);
+}
+
+
+h1 {
+    font-family: 'Arial',
+    sans-serif;
+    font-size: 2rem;
+    padding: 2% 0;
+    margin-bottom: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 70vw;
+    height: 95vh;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.image {
+    background-image: url("https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+    width: 30vw;
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+}
+
+.form-table {
+    background-color: white;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.box {
+    display: block;
+    margin: 1% auto;
+    font-weight: 700;
+}
+
+#friend, #family {
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #f0d4bb;
+    border: none;
+    margin: 5% auto auto;
+    font-size: 1rem;
+    padding: 3% 5%;
+    border-radius: 9px;
+    font-family: 'Tahoma';
+    font-weight: 700;
+    color: #1695b4;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color:#1695b4;
+    color: white;
+}
+
+
+input, select, textarea {
+    padding: 3px 10px 8px 7px;
+    font-size: 1rem;
+    background-clip: padding-box;
+    color: #1695b4;
+    border: 1px solid #f0d4bb;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+    font-family: 'Tahoma';
+    margin-bottom: 10px;
+}
+
+#budget {
+    width: 54vw;
+    margin: 5% auto auto auto;
+    border-collapse: collapse;
+    text-align: center;
+    -webkit-box-shadow: -2px 2px 55px -19px black;
+    -moz-box-shadow: -2px 2px 55px -19px black;
+    box-shadow: -2px 2px 55px -19px grey;
+}
+
+#budget th {
+    background-color: #8e73da;
+    color: white;
+    height: 5vh;
+}
+
+
+#budget td {
+    height: 3vh;
+    width: 4vh;
+}
+
+#budget > thead > tr > th:first-child{
+    border-top-left-radius: 12px;
+
+}
+
+#budget>thead>tr>th:last-child {
+    border-top-right-radius: 12px;
+}
+
+#budget>tbody>tr:nth-child(odd) {
+    background-color: white;
+}
+
+
+#budget>tbody>tr:nth-child(even) {
+    background-color: #f0d4bb;
+}
+
+@media only screen and (max-width: 800px) {
+    .image {
+        display: none;
+    }
+
+    .container {
+        width: 90vw;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .form-table {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
